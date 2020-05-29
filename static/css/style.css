@@ -1,0 +1,123 @@
+body {
+  background-color: purple;
+}
+
+#cont {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#toClient {
+  z-index: 9999;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+
+  color: white;
+}
+
+#root {
+  z-index: 10;
+
+  width: 100%;
+  height: 50%;
+}
+
+header#head {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+body {
+  overflow-y: hidden;
+  background-color: #333;
+}
+
+#sel {
+  display: none;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loginBox,
+.waitingBox {
+  position: fixed;
+  top: 30%;
+  left: calc(50% - 200px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 300px;
+
+  opacity: 1;
+  color: #fff;
+  border: 2px solid #d659ff;
+  background-color: rgba(174, 0, 232, 0.3);
+}
+
+.waitingBox {
+  display: none;
+}
+
+#root {
+  opacity: 0.2;
+}
+
+.loginBox span,
+.waitingBox {
+  font-size: 2em;
+  color: #d659ff;
+}
+
+.loginBox button,
+#username {
+  font-size: 2em;
+  width: 250px;
+  height: 1.5em;
+  /*margin-top: 30px;*/
+
+  text-align: center;
+  color: white;
+  border: 2px solid #d659ff;
+  background-color: #d659ff;
+}
+
+#username::placeholder {
+  color: rgb(174, 0, 232);
+}
+
+.playerInfo {
+  font-size: 1.5em;
+
+  position: fixed;
+  top: 0;
+  left: calc(50% - 300px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 600px;
+  height: 100px;
+  color: #fff;
+  color: #d659ff;
+  border: 2px solid #d659ff;
+  border-top: 0;
+  background-color: rgba(174, 0, 232, 0.3);
+}
